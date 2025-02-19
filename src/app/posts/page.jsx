@@ -13,7 +13,7 @@ const PostsPage = async () => {
 
     return (
         <div className='p-5'>
-            <h2>All Posts is here</h2>
+            <h2 className='mb-5 text-center font-bold text-3xl'>All Posts is here</h2>
             <div className='grid grid-cols-4 gap-5'>
                 {
                     postsData.map(({ id, title, body }) => {

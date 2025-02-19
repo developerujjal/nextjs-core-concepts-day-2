@@ -12,7 +12,7 @@ const NavBar = () => {
             <ol className="flex justify-center gap-5 py-3">
                 <li><Link href={'/'} className={`${pathName === '/' && 'text-black font-bold'}`}>Home</Link></li>
                 <li><Link href={'/about'} className={`${pathName === '/about' && 'text-black font-bold'}`}>About</Link></li>
-                <li><Link href={'/posts'} className={`${pathName === '/blog' && 'text-black font-bold'}`}>Posts</Link></li>
+                <li><Link href={'/posts'} className={`${pathName === '/posts' && 'text-black font-bold'}`}>Posts</Link></li>
                 <li><Link href={'/services'} className={`${pathName === '/service' && 'text-black font-bold'}`}>Services</Link></li>
                 <li><Link href={'/contact'} className={`${pathName === '/contact' && 'text-black font-bold'}`}>Contact</Link></li>
             </ol>

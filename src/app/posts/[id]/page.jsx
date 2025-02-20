@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './post.module.css'
 
 const getSinglePostData = async (id) => {
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
@@ -17,8 +18,12 @@ const PostDetails = async ({ params }) => {
     console.log(getData)
 
     return (
-        <div>
-            <h1>{getData?.title}</h1>
+        <div className='p-10'>
+
+            {/* both will work */}
+            {/* <h1 className={`${style['hot-style']}`}>{getData?.title}</h1> */}
+            <h1 className={style.hot_style}>{getData?.title}</h1>
+
             <p>{getData?.body}</p>
         </div>
     );

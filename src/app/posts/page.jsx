@@ -20,7 +20,7 @@ const PostsPage = async () => {
                     postsData.map(({ id, title, body }) => {
                         return (
                             <div key={id} className='border'>
-                                <h1>{title}</h1>
+                                <h1 className={`test-purpose`}>{title}</h1>
                                 <p className='mb-5'>{body}</p>
                                 <Link href={`/posts/${id}`} className='px-2 py-1.5 bg-yellow-200 text-black'>Post Details</Link>
                             </div>

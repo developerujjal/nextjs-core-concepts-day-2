@@ -8,6 +8,13 @@ const getPostsData = async () => {
 }
 
 
+export const metadata = {
+    title: 'All Posts | Developer Ujjal',
+    description: 'You can see all of the post from here.'
+
+}
+
+
 const PostsPage = async () => {
     const postsData = await getPostsData();
     console.log(postsData)

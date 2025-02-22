@@ -7,6 +7,15 @@ const nextConfig = {
                 hostname: 'cdn.bdstall.com'
             }
         ]
+    },
+    redirects: async () => {
+        return [
+            {
+                source: '/contact',
+                destination: '/posts',
+                permanent: true
+            }
+        ]
     }
 };
 

@@ -27,6 +27,7 @@ const PostsPage = async () => {
     return (
         <div className='p-5'>
             <h2 className='mb-5 text-center font-bold text-3xl'>All Posts is here</h2>
+            <p>We are here to help you to make it more informational</p>
             <div className='grid grid-cols-4 gap-5'>
                 {
                     postsData.map(({ id, title, body }) => {
